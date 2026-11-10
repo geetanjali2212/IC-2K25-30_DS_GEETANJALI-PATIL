@@ -18,12 +18,10 @@ int main() {
     cout << "Enter value to insert: ";
     cin >> value;
 
-    // Shift elements to the right
     for (int i = n; i >= pos; i--) {
         arr[i] = arr[i - 1];
     }
 
-    // Insert the new element
     arr[pos - 1] = value;
     n++;
 
