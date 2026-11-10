@@ -4,8 +4,6 @@ using namespace std;
 int main()
 {
     int a[3][3], r, c, value;
-
-    // Input elements
     cout << "Enter 9 elements: ";
     for(int i = 0; i < 3; i++)
     {
@@ -13,7 +11,6 @@ int main()
             cin >> a[i][j];
     }
 
-    // Insert value
     cout << "Enter row and column: ";
     cin >> r >> c;
 
@@ -25,10 +22,8 @@ int main()
     else
     {
         cout << "Invalid position!";
-        return 0;
+        return 0; 
     }
-
-    // Display array
     cout << "Updated array:\n";
     for(int i = 0; i < 3; i++)
     {
